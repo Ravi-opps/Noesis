@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #6d28d9;
+  --color-primary-container: #ede9fe;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #4c1d95;
+  
+  --color-secondary: #475569;
+  --color-secondary-container: #ede9fe;
+  
+  --color-tertiary: #8b5cf6;
+  --color-tertiary-container: #f3e8ff;
+  
+  --color-surface: #faf7ff;
+  --color-surface-container-low: #f6f0ff;
+  --color-surface-container: #ffffff;
+  --color-surface-container-high: #f3ebff;
+  --color-surface-container-highest: #e9ddff;
+  --color-surface-bright: #ffffff;
+  
+  --color-outline-variant: #ddd6fe;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-slate-900 font-body antialiased;
+    background-image: radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.18) 0px, transparent 55%),
+                      radial-gradient(at 100% 100%, rgba(109, 40, 217, 0.14) 0px, transparent 50%);
+  }
+}
+
+@layer utilities {
+  .editorial-gradient {
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  }
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+  }
+}

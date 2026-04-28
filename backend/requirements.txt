@@ -1,0 +1,15 @@
+fastapi[all]
+uvicorn
+psycopg2-binary
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1
+python-multipart
+python-dotenv
+chromadb
+praw
+sentence-transformers
+langchain
+langchain-core
+langchain-groq
+redis
